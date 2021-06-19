@@ -215,7 +215,8 @@
                             <b>Height:</b> 5 feet 4 inch<br>
                             <u><b>Present Address:</b></u><br> Dhaka Road, Sakhipur Municipality,<b>Post Office:</b>
                             Sakhipur-1950 <b>Sakhipur, Tangail</b> <br>
-                            <u><b>Permanent Address:</b></u> <br> Bazail (North Part),<b>Post Office:</b>Hateya Rajabari-1941, <b>Sakhipur, Tangail</b> <br>
+                            <u><b>Permanent Address:</b></u> <br> Bazail (North Part),<b>Post Office:</b>Hateya
+                            Rajabari-1941, <b>Sakhipur, Tangail</b> <br>
 
                         </p>
                     </div>
@@ -451,63 +452,67 @@
             <div id="container2">
                 <b>Last Updated on:</b> 19 Jun 2021
                 <br>
-            <b>Today:</b> <br>
-            <script>
-
-                /*Current date script credit: 
+                <b>Today:</b> <br>
+                <script>
+                    /*Current date script credit: 
                 JavaScript Kit (www.javascriptkit.com)
                 Over 200+ free scripts here!
                 */
-                
-                var mydate=new Date()
-                var year=mydate.getYear()
-                if (year < 1000)
-                year+=1900
-                var day=mydate.getDay()
-                var month=mydate.getMonth()
-                var daym=mydate.getDate()
-                if (daym<10)
-                daym="0"+daym
-                var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-                var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-                document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
-                
+
+                    var mydate = new Date()
+                    var year = mydate.getYear()
+                    if (year < 1000)
+                        year += 1900
+                    var day = mydate.getDay()
+                    var month = mydate.getMonth()
+                    var daym = mydate.getDate()
+                    if (daym < 10)
+                        daym = "0" + daym
+                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+                        "Saturday")
+                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+                        "September", "October", "November", "December")
+                    document.write("<small><font color='000000' face='Arial'><b>" + dayarray[day] + ", " + montharray[
+                        month] + " " + daym + ", " + year + "</b></font></small>")
                 </script><br>
                 <b>Time:</br>
-                <form name="Tick">
-                    <input type="text" size="11" name="Clock">
+                    <form name="Tick">
+                        <input type="text"
+                            size="11"
+                            name="Clock">
                     </form>
                     <script>
-                    <!--
-                    /*By George Chiang (JK's JavaScript tutorial)
+                        <!--
+                        /*By George Chiang (JK's JavaScript tutorial)
                     http://javascriptkit.com
                     Credit must stay intact for use*/
-                    function show(){
-                    var Digital=new Date()
-                    var hours=Digital.getHours()
-                    var minutes=Digital.getMinutes()
-                    var seconds=Digital.getSeconds()
-                    var dn="AM"
-                    if (hours>12){
-                    dn="PM"
-                    hours=hours-12
-                    }
-                    if (hours==0)
-                    hours=12
-                    if (minutes<=9)
-                    minutes="0"+minutes
-                    if (seconds<=9)
-                    seconds="0"+seconds
-                    document.Tick.Clock.value=hours+":"+minutes+":"
-                    +seconds+" "+dn
-                    setTimeout("show()",1000)
-                    }
-                    show()
-                    //-->
+                        function show() {
+                            var Digital = new Date()
+                            var hours = Digital.getHours()
+                            var minutes = Digital.getMinutes()
+                            var seconds = Digital.getSeconds()
+                            var dn = "AM"
+                            if (hours > 12) {
+                                dn = "PM"
+                                hours = hours - 12
+                            }
+                            if (hours == 0)
+                                hours = 12
+                            if (minutes <= 9)
+                                minutes = "0" + minutes
+                            if (seconds <= 9)
+                                seconds = "0" + seconds
+                            document.Tick.Clock.value = hours + ":" + minutes + ":" +
+                                seconds + " " + dn
+                            setTimeout("show()", 1000)
+                        }
+                        show()
+                        //
+                        -->
                     </script>
 
-            <hr class="common-hr">
-        </div>
+                    <hr class="common-hr">
+            </div>
 
 
         </main>
@@ -532,7 +537,7 @@
             <!-- <a href="https://github.com/TanvirBD71"
                 target="blank">GitHub</a> -->
             <p>Copyright &copy;<a href="https://www.twitter.com/_TANVIR_AHMAD_"
-                    target="blank">TANVIR</a>2020-<script>
+                    target="blank">TANVIR</a> Since: 2020-<script>
                     document.write(new Date().getFullYear());
                 </script>
             </p>
